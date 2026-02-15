@@ -1,5 +1,8 @@
 'use client'
 import { useEffect, useRef } from 'react'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 
 export default function Navbar() {
     const sideMenuRef = useRef();
@@ -64,25 +67,36 @@ export default function Navbar() {
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#work">My Work</a></li>
                     <li><a className='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#contact">Contact me</a></li>
                 </ul>
+<div className="flex items-center gap-4">
+    {/* Theme toggle */}
+    <button onClick={toggleTheme}>
+        <img src="/assets/moon_icon.png" alt="" className="w-5 dark:hidden" />
+        <img src="/assets/sun_icon.png" alt="" className="w-5 hidden dark:block" />
+    </button>
 
-                <div className="flex items-center gap-4">
-                    <button onClick={toggleTheme}>
-                        <img src="/assets/moon_icon.png" alt="" className="w-5 dark:hidden" />
-                        <img src="/assets/sun_icon.png" alt="" className="w-5 hidden dark:block" />
-                    </button>
+    {/* MUI social icons */}
+    <a href="https://github.com/dhanalakshmi-stack/Portfolio" target="_blank" rel="noopener noreferrer" className="hidden md:flex hover:text-gray-500 dark:hover:text-gray-300 transition">
+        <GitHubIcon fontSize="medium" />
+    </a>
+    <a href="https://www.linkedin.com/in/dhanalakshmi-ramamoorthy" target="_blank" rel="noopener noreferrer" className="hidden md:flex hover:text-gray-500 dark:hover:text-gray-300 transition">
+        <LinkedInIcon fontSize="medium" />
+    </a>
 
-                    <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
-                        Contact
-                        <img src="/assets/arrow-icon.png" alt="" className="w-3 dark:hidden" />
-                        <img src="/assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
-                    </a>
+    {/* Contact button */}
+    <a href="#contact" className="hidden lg:flex items-center gap-3 px-8 py-1.5 border border-gray-300 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full ml-4 font-Ovo dark:border-white/30">
+        Contact
+        <img src="/assets/arrow-icon.png" alt="" className="w-3 dark:hidden" />
+        <img src="/assets/arrow-icon-dark.png" alt="" className="w-3 hidden dark:block" />
+    </a>
 
-                    <button className="block md:hidden ml-3" onClick={openMenu}>
-                        <img src="/assets/menu-black.png" alt="" className="w-6 dark:hidden" />
-                        <img src="/assets/menu-white.png" alt="" className="w-6 hidden dark:block" />
-                    </button>
+    {/* Mobile menu toggle */}
+    <button className="block md:hidden ml-3" onClick={openMenu}>
+        <img src="/assets/menu-black.png" alt="" className="w-6 dark:hidden" />
+        <img src="/assets/menu-white.png" alt="" className="w-6 hidden dark:block" />
+    </button>
+</div>
 
-                </div>
+
                 {/* -- ----- mobile menu ------  -- */}
                 <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
 
