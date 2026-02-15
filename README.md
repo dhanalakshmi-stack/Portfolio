@@ -1,41 +1,46 @@
-# Eliana - Next.js Portfolio Template
+# Dhanalakshmi - Developer Portfolio
 
-#### Preview
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-green)](https://dhanalakshmi-stack.github.io/Portfolio/)
 
- - [Demo](https://themewagon.github.io/eliana-nextjs/)
+---
 
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/eliana-nextjs/)
+## About Me
+
+Hi! I’m **Dhanalakshmi**, a passionate **MERN Stack Developer** with experience in building web applications using **React, Next.js, Node.js, Express, MongoDB**, and modern web technologies.
+
+I enjoy creating **clean, responsive, and interactive web apps**, and continuously improving my skills in full-stack development.
+
+---
+
+## Projects
+
+Here’s a glimpse of the projects showcased in my portfolio:
+
+1. **Portfolio Website** – Personal developer portfolio built with Next.js and Tailwind CSS.  
+2. **Task Manager App** – MERN stack CRUD app with user authentication and database integration.  
+3. **Crypto Tracker** – Tracks live cryptocurrency prices using public APIs.  
+4. **Mini E-commerce UI** – Frontend project demonstrating product listing, filtering, and responsive design.  
+5. **Professional Work Case Studies** – Summaries of real-world MERN stack applications I’ve contributed to, including dashboards, APIs, and authentication systems.  
+
+> More projects will be added as I continue building.
+
+---
+
+## Skills
+
+- **Frontend:** React.js, Next.js, Redux, Tailwind CSS, HTML, CSS, JavaScript  
+- **Backend:** Node.js, Express.js, REST APIs, JWT Authentication, MongoDB  
+- **Tools & Platforms:** Git, GitHub, VS Code, Postman, npm, yarn  
+- **Other:** Responsive Web Design, Component-based Architecture, API Integration  
+
+---
 
 ## Getting Started
 
-1. Clone Repository
-```
-git clone https://github.com/themewagon/eliana-nextjs.git
-```
-2. Install Dependencies
-```
-npm i
-```
-3. Run the development server:
+Follow these steps to run the portfolio locally:
+
+1. **Clone the repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-## Author 
-```
-Design and code is completely written by PrebuiltUI and development team. 
-```
-
-## License
-
- - Design and Code is Copyright &copy; <a href="https://prebuiltui.com/?utm_source=eliana" target="_blank">PrebuiltUI</a>
- - Licensed cover under [MIT]
- - Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+git clone https://github.com/dhanalakshmi-stack/Portfolio.git
+cd Portfolio
